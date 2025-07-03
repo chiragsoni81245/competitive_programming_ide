@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  competitive-programming-ide:
+    build: .
+    container_name: competitive-programming-ide
+    ports:
+      - 8080:8080
+    volumes:
+      - ./competitive_programming:/root/competitive_programming
+    environment:
+      - PASSWORD=itscptime
+      - PORT=8080
+
