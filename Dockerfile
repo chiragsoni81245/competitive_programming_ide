@@ -1,7 +1,7 @@
 FROM ubuntu:latest AS builder
 
 WORKDIR /root
-RUN mkdir -p /root/competitive_programming /root/code-server
+RUN mkdir -p /root/code /root/code-server
 
 # Install base packages
 RUN apt update && \

@@ -7,8 +7,8 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./competitive_programming:/root/competitive_programming
+      - "./code:/root/code"
     environment:
-      - PASSWORD=itscptime
+      - PASSWORD=${PASSWORD}
       - PORT=8080
 
